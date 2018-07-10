@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Cube'
-copyright = '2018, BioApfelsaft SirPolly'
-author = 'BioApfelsaft SirPolly'
+copyright = '2018, BioApfelsaft, One Man Monkey Squad'
+author = 'BioApfelsaft, One Man Monkey Squad'
 
 # The short X.Y version
 version = ''
@@ -39,7 +39,6 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.imgmath',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -75,7 +74,8 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme_path = ['./_themes']
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -130,7 +130,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Cube.tex', 'Cube Documentation',
-     'BioApfelsaft SirPolly', 'manual'),
+     'BioApfelsaft, One Man Monkey Squad', 'manual'),
 ]
 
 
@@ -154,6 +154,3 @@ texinfo_documents = [
      author, 'Cube', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-# -- Extension configuration -------------------------------------------------
